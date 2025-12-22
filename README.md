@@ -1,3 +1,4 @@
+
 # *SORL1* Across Neurodegenerative Diseases: A Multi-Ancestry Biobank-Scale Assessment
 
 `GP2 ❤️ Open Science 😍`
@@ -15,7 +16,7 @@
 This repository contains the code, data workflows, and results associated with the manuscript titled:  
 **“Is SORL1 a common genetic target across neurodegenerative diseases?: A multi-ancestry biobank-scale assessment.”**
 
-In this study, we performed the largest global genetic analysis of the *SORL1* gene across Alzheimer’s disease (AD), related dementias (RD), and Parkinson’s disease (PD) using whole-genome sequencing (WGS) and imputed data from six large biobank-scale resources. We analyzed 67,749 cases and 111,969 controls from 11 genetically defined ancestries, evaluating rare protein-altering and splicing variants, performing burden and association tests, and characterizing haplotype structure and expression impact across diseases and populations.
+In this study, we performed the largest global genetic analysis of the *SORL1* gene across Alzheimer’s disease (AD), related dementias (RD), and Parkinson’s disease (PD) using whole-genome sequencing (WGS) and imputed data from six large biobank-scale resources. We analyzed 67,749 cases and 111,969 controls from 11 genetically defined ancestries, evaluating rare protein-altering and splicing variants, performing burden and association tests, and characterizing haplotype structure and expression impact across diseases and populations. In addition, we conducted a family-based analysis of 398 informative families with at least one PD case and at least two members.
 
 Highlights of this work include:
 
@@ -23,6 +24,8 @@ Highlights of this work include:
 - Replication of *SORL1* variants across AD, RD, and PD, highlighting pleiotropic effects
 - Discovery of ancestry-specific and cross-ancestry associations
 - Haplotype and eQTL analyses showing disease-specific architecture and regulatory implications
+- A family-based analysis identified a rare predicted-damaging variant in East Asians and two in European ancestries that show evidence of segregation in PD families
+
 
 ---
 
@@ -46,7 +49,7 @@ Highlights of this work include:
 If you use this repository or find it helpful for your research, please cite the corresponding manuscript:
 
 > **Is SORL1 a Common Genetic Target Across Neurodegenerative Diseases?: A Multi-Ancestry Biobank-Scale Assessment**  
-> *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Merchant K, Rothstein JD, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2025*  
+> *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Bustos BI, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Rothstein JD, Merchant K, Mencacci NE, Krainc D, Cookson MR, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2025*  
 > *(DOI: pending)*
 
 ---
@@ -73,10 +76,27 @@ If you use this repository or find it helpful for your research, please cite the
 ├── UKBiobank/
 │   └── 00_UKB.ipynb
 ├── 06_Fine_mapping.R
-├── Visualization of Protein Structure
+├── Visualization_Protein_Structure/
 │   └── q92673_model.cif
 │   └── label_SORL1_PD.pml
 │   └── label_SORL1_ADRD.pml
+├── Family-based_Analysis/
+│   └──r10_annotate_plink2_fams.sh
+│   └──r10_extract_SORL1_rare_damaging_pfiles.sh
+│   └──r10_extract_chr11_informative_pfiles.sh
+│   └──r10_export_SORL1_rare_damaging_raw.sh
+│   └──r10_extract_SORL1_strict3_variants_cc.sh
+│   └──r10_make_informative_keep_files.R
+│   └──r10_rank_SORL1_all_PD_carrier_variants.R
+│   └──r10_SORL1_strict3_variants_fisher.R
+│   └──r10_merge_core_fams_with_inferred_fams.R
+│   └──r10_mark_informative_families.R
+│   └──r10_annotate_core_ped_with_master.R
+│   └──r10_kinship_clusters_to_ped.R
+│   └──r10_summarize_SORL1_segregation_by_ancestry.R
+│   └──r10_filter_SORL1_by_ancestry.R
+│   └──r10_rebuild_unrelated_cc_mono_brainbank_IIDpsam.R
+│   └──r10_breakdown_top3_SORL1_variants.R
 └── LICENSE
 ```
 ---
@@ -92,6 +112,8 @@ If you use this repository or find it helpful for your research, please cite the
     * Bayesian colocalization using coloc with diverse AD/PD GWAS datasets to nominate causal variants
 5. eQTL Annotation
      * Multivariate brain eQTLs using the mmQTL resource from PsychENCODE, GTEx, and ROSMAP
+6. Family-based analysis
+     * Family-based analysis of 398 informative families with at least one PD case and at least two members
 
 ## Analysis Notebooks / Scripts
 | **Scripts**                 | **Description**                                                                 |
@@ -110,7 +132,22 @@ If you use this repository or find it helpful for your research, please cite the
 |`ADSP/00_Visualization_ADSP.R`|Haplotype data visualization in ADSP|
 |`GP2/01_Visualization_GP2.R`|Haplotype data visualization in GP2|
 |`q92673_model.cif,label_SORL1_PD.pml,label_SORL1_ADRD.pml`                 |Visualization of Protein Structure|
-
+|`r10_annotate_plink2_fams.sh`            | Annotate SORL1 Region Variants|
+|`r10_extract_SORL1_rare_damaging_pfiles.sh`            | Extract SORL1 Rare Damaging files|
+|`r10_extract_chr11_informative_pfiles.sh`            | Extract chr11 SORL1 region|
+|`r10_export_SORL1_rare_damaging_raw.sh`            | Export SORL1 Rare Damaging Raw Genotypes|
+|`r10_extract_SORL1_strict3_variants_cc.sh`            | SORL1 Variant Carrier Analysis|
+|`r10_make_informative_keep_files.R`            | Build Informative WGS PLINK Keep Files by Ancestry|
+|`r10_rank_SORL1_all_PD_carrier_variants.R`            |Rank SORL1 Variants by All-PD-Carrier Families with Strict Segregation Filter |
+|`r10_SORL1_strict3_variants_fisher.R`            | Compute Carrier Counts and Fisher Tests for SORL1  Variants|
+|`r10_merge_core_fams_with_inferred_fams.R`            |Merge Core and Kinship-Inferred Pedigrees into Master PED Table |
+|`r10_mark_informative_families.R`            | Mark Informative Families and Individuals in Master Pedigree|
+|`r10_annotate_core_ped_with_master.R`            |Annotate Core Pedigree with Master Key and Extended Clinical Fields |
+|`r10_kinship_clusters_to_ped.R`            |Build Kinship-Inferred Families for Non-Core WGS Samples |
+|`r10_summarize_SORL1_segregation_by_ancestry.R`            |Summarize SORL1 Rare Variant Segregation by Ancestry |
+|`r10_filter_SORL1_by_ancestry.R`            |Filter Rare Damaging SORL1 Variants by Ancestry |
+|`r10_rebuild_unrelated_cc_mono_brainbank_IIDpsam.R`            | Build Unrelated WGS Cohort by Ancestry and Study Type|
+|`r10_breakdown_top3_SORL1_variants.R`            |Top SORL1 Variants Family Segregation |
 
 ## Software
 | Software  | Version   | Resource URL                                                               | RRID              | Notes                                  |
