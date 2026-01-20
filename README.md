@@ -16,14 +16,13 @@
 This repository contains the code, data workflows, and results associated with the manuscript titled:  
 **“Is SORL1 a common genetic target across neurodegenerative diseases?: A multi-ancestry biobank-scale assessment.”**
 
-In this study, we performed the largest global genetic analysis of the *SORL1* gene across Alzheimer’s disease (AD), related dementias (RD), and Parkinson’s disease (PD) using whole-genome sequencing (WGS) and imputed data from six large biobank-scale resources. We analyzed 67,749 cases and 111,969 controls from 11 genetically defined ancestries, evaluating rare protein-altering and splicing variants, performing burden and association tests, and characterizing haplotype structure and expression impact across diseases and populations. In addition, we conducted a family-based analysis of 398 informative families with at least one PD case and at least two members.
+In this study, we performed the largest global genetic analysis of the *SORL1* gene across Alzheimer’s disease (AD), related dementias (RD), and Parkinson’s disease (PD) using whole-genome sequencing (WGS) and imputed data from six large biobank-scale resources. We analyzed 67,749 cases and 111,969 controls from 11 genetically defined ancestries, evaluating rare protein-altering and splicing variants, performing burden and association tests, and expression impact across diseases and populations. In addition, we conducted a family-based analysis of 398 informative families with at least one PD case and at least two members.
 
 Highlights of this work include:
 
 - Identification of 53 potentially disease-causing *SORL1* variants, including 41 novel variants
 - Replication of *SORL1* variants across AD, RD, and PD, highlighting pleiotropic effects
 - Discovery of ancestry-specific and cross-ancestry associations
-- Haplotype and eQTL analyses showing disease-specific architecture and regulatory implications
 - A family-based analysis identified a rare predicted-damaging variant in East Asians and two in European ancestries that show evidence of segregation in PD families
 
 
@@ -49,7 +48,7 @@ Highlights of this work include:
 If you use this repository or find it helpful for your research, please cite the corresponding manuscript:
 
 > **Is SORL1 a Common Genetic Target Across Neurodegenerative Diseases?: A Multi-Ancestry Biobank-Scale Assessment**  
-> *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Bustos BI, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Rothstein JD, Merchant K, Mencacci NE, Krainc D, Cookson MR, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2025*  
+> *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Bustos BI, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Rothstein JD, Merchant K, Mencacci NE, Krainc D, Cookson MR, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2026*  
 > *(DOI: pending)*
 
 ---
