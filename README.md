@@ -59,8 +59,6 @@ If you use this repository or find it helpful for your research, please cite the
 .
 ├── ADSP/
 │   └── 00_ADSP.ipynb
-│   └── 00_Haplotype analysis_ADSP.ipynb
-│   └── 00_Visualization_ADSP.R
 ├── AllofUs/
 │   └── 00_AllofUs.ipynb
 ├── AMP-PD/
@@ -69,9 +67,6 @@ If you use this repository or find it helpful for your research, please cite the
 │   └── 00_AMP_PD.ipynb
 ├── GP2/
 │   └── 00_GP2.ipynb
-│   └── 01_Haplotype analysis_WGS_GP2.ipynb
-│   └── 02_Haplotype analysis_IMP_GP2.ipynb
-│   └── 01_Visualization_GP2.R
 ├── UKBiobank/
 │   └── 00_UKB.ipynb
 ├── 06_Fine_mapping.R
@@ -105,13 +100,11 @@ If you use this repository or find it helpful for your research, please cite the
     * Filtering based on CADD > 20, MAC ≥ 2, protein-altering or splicing impact, and case-only presence
 2. Association and Burden Analysis
     * Case-control comparisons using logistic regression and burden tests (SKAT-O) via RVTESTS
-3. Haplotype Analysis
-    * Construction of ±100 kb haplotype blocks surrounding SORL1 by disease and ancestry using common variants
-4. Fine Mapping
+3. Fine Mapping
     * Bayesian colocalization using coloc with diverse AD/PD GWAS datasets to nominate causal variants
-5. eQTL Annotation
+4. eQTL Annotation
      * Multivariate brain eQTLs using the mmQTL resource from PsychENCODE, GTEx, and ROSMAP
-6. Family-based analysis
+5. Family-based analysis
      * Family-based analysis of 398 informative families with at least one PD case and at least two members
 
 ## Analysis Notebooks / Scripts
@@ -125,11 +118,6 @@ If you use this repository or find it helpful for your research, please cite the
 | `AMP-PD/00_AMP_Clinical data.ipynb` | Clinical characterization and cognitive profiling of variant carriers in AMP PD |
 | `GP2/00_GP2.ipynb`                  | Variant filtering, Case-control association and burden analysis across ancestries using GP2 imputed data   |
 | `UKBiobank/00_UKB.ipynb`            | Variant filtering, Gene-based and single-variant association analysis in UKB AD/RD/PD populations  |
-|`ADSP/00_Haplotype analysis_ADSP.ipynb`|Haplotype analysis in ADSP |
-|`GP2/01_Haplotype analysis_WGS_GP2.ipynb`| Haplotype analysis in GP2 WGS data|
-|`GP2/02_Haplotype analysis_IMP_GP2.ipynb`|Haplotype analysis in GP2 Imputed data|
-|`ADSP/00_Visualization_ADSP.R`|Haplotype data visualization in ADSP|
-|`GP2/01_Visualization_GP2.R`|Haplotype data visualization in GP2|
 |`q92673_model.cif,label_SORL1_PD.pml,label_SORL1_ADRD.pml`                 |Visualization of Protein Structure|
 |`r10_annotate_plink2_fams.sh`            | Annotate SORL1 Region Variants|
 |`r10_extract_SORL1_rare_damaging_pfiles.sh`            | Extract SORL1 Rare Damaging files|
@@ -154,8 +142,7 @@ If you use this repository or find it helpful for your research, please cite the
 | R         | 4.3.1     | [r-project.org](https://www.r-project.org/)                                | RRID\:SCR\_001905 | Core data analysis and plotting        |
 | PLINK     | 1.9 / 2.0 | [cog-genomics.org/plink/](http://www.cog-genomics.org/plink/)              | RRID\:SCR\_001757 | Genotype extraction and frequency calc |
 | RVTESTS   | 2.1.0     | [github.com/zhanxw/rvtests](https://github.com/zhanxw/rvtests)             | RRID\:SCR\_019033 | SKAT-O burden testing                  |
-| ANNOVAR   | 2019Oct24 | [wannovar.wglab.org](https://wannovar.wglab.org/)                          | RRID\:SCR\_012821 | Variant annotation                     |
-| LDlink    | -         | [ldlink.nih.gov](https://ldlink.nih.gov/)                                  | RRID\:SCR\_014978 | LD calculation                         |
+| ANNOVAR   | 2019Oct24 | [wannovar.wglab.org](https://wannovar.wglab.org/)                          | RRID\:SCR\_012821 | Variant annotation                                      |
 | GenoTools | -         | [github.com/dvitale199/GenoTools](https://github.com/dvitale199/GenoTools) | -                 | Ancestry prediction and QC             |
 | coloc     | 6.0.0     | [CRAN - coloc](https://cran.r-project.org/web/packages/coloc/)             | -                 | Fine-mapping & colocalization          |
 
