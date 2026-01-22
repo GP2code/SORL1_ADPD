@@ -48,7 +48,7 @@ Highlights of this work include:
 If you use this repository or find it helpful for your research, please cite the corresponding manuscript:
 
 > **Is SORL1 a Common Genetic Target Across Neurodegenerative Diseases?: A Multi-Ancestry Biobank-Scale Assessment**  
-> *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Bustos BI, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Rothstein JD, Merchant K, Mencacci NE, Krainc D, Cookson MR, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2026*  
+> *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Bustos BI, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Jonson C, Chen PS, Tay YW, Rothstein JD, Bardien S, Lin CH, Lim SY, Klein C, Merchant K, Mencacci NE, Krainc D, Cookson MR, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2026*  
 > *(DOI: pending)*
 
 ---
