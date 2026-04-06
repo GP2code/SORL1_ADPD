@@ -7,14 +7,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Last Updated:** January 2026
+**Last Updated:** April 2026
 
 ---
 
 ## **Summary**
 
 This repository contains the code, data workflows, and results associated with the manuscript titled:  
-**“Is SORL1 a common genetic target across neurodegenerative diseases?: A multi-ancestry biobank-scale assessment.”**
+**“Is SORL1 a common genetic target across neurodegenerative diseases?: A multi-ancestry biobank study.”**
 
 In this study, we performed the largest global genetic analysis of the *SORL1* gene across Alzheimer’s disease (AD), related dementias (RD), and Parkinson’s disease (PD) using whole-genome sequencing (WGS) and imputed data from six large biobank-scale resources. We analyzed 67,749 cases and 111,969 controls from 11 genetically defined ancestries, evaluating rare protein-altering and splicing variants, performing burden and association tests, and expression impact across diseases and populations. In addition, we conducted a family-based analysis of 398 informative families with at least one PD case and at least two members.
 
@@ -47,7 +47,7 @@ Highlights of this work include:
 
 If you use this repository or find it helpful for your research, please cite the corresponding manuscript:
 
-> **Is SORL1 a Common Genetic Target Across Neurodegenerative Diseases?: A Multi-Ancestry Biobank-Scale Assessment**  
+> **Is SORL1 a Common Genetic Target Across Neurodegenerative Diseases?: A Multi-Ancestry Biobank study**  
 > *Khani M, Yeboah SN, Cerquera-Cleves C, Kedmi A, Bustos BI, Grant SM, Akerman SC, Akçimen F, Lee PS, Reyes-Pérez P, Lange LM, Leonard H, Koretsky MJ, Makarious MB, Schneider Z, Jonson C, Chen PS, Tay YW, Rothstein JD, Lin CH, Lim SY, Klein C, Merchant K, Mencacci NE, Krainc D, Cookson MR, Singleton AB, Bandres-Ciga S; Global Parkinson's Genetics Program (GP2), 2026*  
 > *(DOI: pending)*
 
